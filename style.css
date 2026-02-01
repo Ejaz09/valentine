@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card {
+  position: relative;
+}
+
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+#no {
+  position: absolute;
+}
+
+/* ❤️ HEARTS */
+.heart {
+  position: fixed;
+  bottom: -20px;
+  font-size: 20px;
+  animation: fly 6s linear forwards;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+@keyframes fly {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-120vh);
+    opacity: 0;
+  }
+}
